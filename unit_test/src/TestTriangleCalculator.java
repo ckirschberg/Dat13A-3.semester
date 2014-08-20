@@ -27,7 +27,6 @@ public class TestTriangleCalculator {
 		double c = tc.calculateHypot(35.0, 612.0);
 		//Assert
 		assertEquals("Large numbers failed", 613.0, c, 0.0);
-	
 	}
 	
 	@Test(expected=NumberFormatException.class) //Assert
