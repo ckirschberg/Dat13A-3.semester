@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+
+//Chr added this at home
 public class TestTriangleCalculator {
 
 	@Test
@@ -13,7 +15,7 @@ public class TestTriangleCalculator {
 		
 		//Act
 		double c = tc.calculateHypot(3.0, 4.0);
-		
+		 
 		//Assert
 		assertEquals("test failed", 5.0, c, 0.0);
 	}
