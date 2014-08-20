@@ -1,4 +1,4 @@
-package src;
+package unit_test_101;
 
 public class TriangleCalculator {
 	
