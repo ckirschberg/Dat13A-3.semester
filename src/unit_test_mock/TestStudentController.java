@@ -11,8 +11,10 @@ public class TestStudentController {
 	public void test() {
 		//Arrange
 		Student s = new Student();
+		
 		//Mock - Fake - ikke en "rigtig" DbWrapperStudent, men en fake.
 		DbWrapperStudent db = Mockito.mock(DbWrapperStudent.class);
+		
 		StudentController controller = new StudentController(db);
 	
 		//Act
@@ -23,3 +25,7 @@ public class TestStudentController {
 	}
 
 }
+
+
+
+
