@@ -2,7 +2,7 @@ package repetition;
 
 import java.io.Serializable;
 
-public class Product implements Serializable {
+public class Product implements Serializable, Comparable<Product>{
 	/**
 	 * 
 	 */
@@ -50,5 +50,15 @@ public class Product implements Serializable {
 	}
 	public void setPrice(double price) {
 		this.price = price;
+	}
+	
+	@Override
+	public int compareTo(Product o) {
+		if (o.getPrice() == this.getPrice())
+		{
+			return 0;
+		}
+		else
+			return this.getPrice() > o.price ? 1 : -1;			
 	}
 }
