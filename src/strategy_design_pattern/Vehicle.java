@@ -1,5 +1,7 @@
 package strategy_design_pattern;
 
+import javax.swing.JOptionPane;
+
 public abstract class Vehicle {
 	private IGoAlgorithm iGo;
 	
