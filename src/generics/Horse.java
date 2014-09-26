@@ -1,6 +1,8 @@
 package generics;
 
-public class Horse {
+import java.io.Serializable;
+
+public class Horse implements Serializable {
 	private String name;
 	private double height;
 	private String email;
