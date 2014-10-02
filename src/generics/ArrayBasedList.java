@@ -1,10 +1,13 @@
 package generics;
 
-public class ArrayBasedList<T> implements ListInterface<T> {
+import java.io.Serializable;
+
+public class ArrayBasedList<T extends Serializable> implements ListInterface<T> {
 	T[] t = (T[])new Object[100];
 	
 	@Override
 	public T get(int index) {
+		
 		return t[index];
 	}
 
